@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="5dp"
+    android:background="#00BCD4"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Oppilaan nimi"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtStudentLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sukunimi" />
+
+        <TextView
+            android:id="@+id/txtEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sähköpostiosoite" />
+
+        <TextView
+            android:id="@+id/txtStudentFaculty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Koulutusohjelma" />
+
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

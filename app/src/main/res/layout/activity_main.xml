@@ -7,84 +7,26 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnAdd"
-        android:layout_width="48dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
-        android:onClick="addValues"
-        android:text="*"
-        app:layout_constraintStart_toEndOf="@+id/btnMinus"
-        app:layout_constraintTop_toBottomOf="@+id/secondInput" />
-
-    <TextView
-        android:id="@+id/txtAnswer"
+        android:id="@+id/btn_ListStudents"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tanne tulee vastaus"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMinus"
-        app:layout_constraintVertical_bias="0.558" />
-
-    <EditText
-        android:id="@+id/firstInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:ems="10"
-        android:hint="Luku1"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:onClick="switchToStudentsList"
+        android:text="Listaa oppilaat"
+        app:layout_constraintEnd_toStartOf="@+id/btn_AddStudent"
+        app:layout_constraintHorizontal_bias="0.537"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/secondInput"
+    <Button
+        android:id="@+id/btn_AddStudent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:ems="10"
-        android:hint="Luku2"
-        android:inputType="textPersonName"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:onClick="switchToAddStudent"
+        android:text="Lisää oppilas"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstInput" />
-
-    <Button
-        android:id="@+id/btnPlus"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="100dp"
-        android:onClick="plusValues"
-        android:text="+"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondInput" />
-
-    <Button
-        android:id="@+id/btnMinus"
-        android:layout_width="46dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
-        android:onClick="minusValues"
-        android:text="-"
-        app:layout_constraintStart_toEndOf="@+id/btnPlus"
-        app:layout_constraintTop_toBottomOf="@+id/secondInput" />
-
-    <Button
-        android:id="@+id/btnDivide"
-        android:layout_width="44dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
-        android:onClick="divideValues"
-        android:text="/"
-        app:layout_constraintStart_toEndOf="@+id/btnAdd"
-        app:layout_constraintTop_toBottomOf="@+id/secondInput" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
