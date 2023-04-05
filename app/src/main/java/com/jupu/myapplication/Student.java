@@ -10,9 +10,8 @@ public class Student {
     public String name;
     public String lastName;
     public String mailAddress;
-    //protected int image;
     public String faculty;
-    //protected int image;
+
 
     //public static int studentCounter = 0;
 
@@ -26,10 +25,10 @@ public class Student {
         this.lastName = lastName;
         this.mailAddress = mailAddress;
         this.faculty = faculty;
+
         //studentCounter++;
 
     }
-
 
     public void setName(String name) {
         this.name = name;
@@ -59,12 +58,32 @@ public class Student {
         this.faculty = faculty;
     }
 
-    public void setFaculty(int faculty) {
-        this.faculty = String.valueOf(faculty);
+    public void setFaculty(int faculty) { this.faculty = String.valueOf(faculty); }
+
+    public void setgrade1(String grade1) { this.name = grade1; }
+
+    public void setgrade1(int grade1) { this.name = String.valueOf(grade1); }
+    public void setgrade2(String grade2) {
+        this.name = grade2;
     }
 
+    public void setgrade2(int grade2) {
+        this.name = String.valueOf(grade2);
+    }
+    public void setgrade3(String grade3) {
+        this.name = grade3;
+    }
 
+    public void setgrade3(int grade3) {
+        this.name = String.valueOf(grade3);
+    }
+    public void setgrade4(String grade4) {
+        this.name = grade4;
+    }
 
+    public void setgrade4(int grade4) {
+        this.name = String.valueOf(grade4);
+    }
 
     public String getName() {
         return name;
@@ -82,8 +101,5 @@ public class Student {
         return faculty;
     }
 
-    //public int getImage() {
-    //    return image;
-    //}
 
 }

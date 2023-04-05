@@ -10,10 +10,10 @@
         android:id="@+id/rgStudentType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <RadioButton
             android:id="@+id/rbTietotekniikka"
@@ -44,7 +44,6 @@
         android:id="@+id/btnAddNewStudent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:onClick="addStudent"
         android:text="Lisää oppilas"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,10 +51,11 @@
         app:layout_constraintTop_toBottomOf="@+id/rgStudentType" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +74,7 @@
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,7 +93,7 @@
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

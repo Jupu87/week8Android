@@ -17,8 +17,6 @@ public class AddStudentActivity extends AppCompatActivity {
     private String lastName;
     private String email;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,12 +25,13 @@ public class AddStudentActivity extends AppCompatActivity {
         txtStdName = findViewById(R.id.txtStdName);
         txtStdLastName = findViewById(R.id.txtStdLastName);
         txtStdEmail = findViewById(R.id.txtStdEmail);
+
     }
 
     public void addStudent(View view) {
 
         RadioGroup rgStudentType = findViewById(R.id.rgStudentType);
-
+        //this.contextkopio = conte
         switch (rgStudentType.getCheckedRadioButtonId()) {
             case R.id.rbTietotekniikka:
                 name = String.valueOf((txtStdName.getText()));
@@ -45,18 +44,21 @@ public class AddStudentActivity extends AppCompatActivity {
                 lastName = String.valueOf((txtStdLastName.getText()));
                 email = String.valueOf((txtStdEmail.getText()));
                 Storage.getInstance().addStudent(new Student(name, lastName, email, "Tuotantotalous"));
+                MainActivity.saveStudents(view);
                 break;
             case R.id.rbLaskennallinenTekniikka:
                 name = String.valueOf((txtStdName.getText()));
                 lastName = String.valueOf((txtStdLastName.getText()));
                 email = String.valueOf((txtStdEmail.getText()));
                 Storage.getInstance().addStudent(new Student(name, lastName, email, "Laskennallinen tekniikka"));
+                //Storage.getInstance().saveStudents(context);
                 break;
             case R.id.rbSahkotekniikka:
                 name = String.valueOf((txtStdName.getText()));
                 lastName = String.valueOf((txtStdLastName.getText()));
                 email = String.valueOf((txtStdEmail.getText()));
                 Storage.getInstance().addStudent(new Student(name, lastName, email, "Sähkötekniikka"));
+                //Storage.getInstance().saveStudents(context);
                 break;
         }
 
